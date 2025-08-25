@@ -1,3 +1,16 @@
+:root {
+    --step--2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
+    --step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+    --step-0: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+    --step-1: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem);
+    --step-2: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
+    --step-3: clamp(1.944rem, 1.771rem + 0.8651vw, 2.4414rem);
+    --step-4: clamp(2.3328rem, 2.0827rem + 1.2504vw, 3.0518rem);
+    --step-5: clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.8147rem);
+  }
+
+
+
 @font-face {
     font-family: "chibi-metro-lines";
     src: url("fonts/chibi-metro-lines.ttf");
@@ -31,11 +44,12 @@ body {
     background-color: rgb(241, 198, 124);
     width: min(100% - 0rem, var(--container-max, 120ch));
     margin-inline: auto;
+    padding-bottom: 7rem;
 }
 
 .upper_page h1 {
     font-family:"chibi-metro-lines","sans-serif";
-    font-size: 5rem;
+    font-size: var(--step-5);
     color: rgb(134, 56, 0);
     -webkit-text-stroke-width: 0.05rem;
     -webkit-text-stroke-color: wheat;
@@ -89,6 +103,19 @@ body {
 
     color: rgb(69, 42, 0);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: var(--step--1);
+}
+
+.note input {
+    color: rgb(147, 95, 12);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: var(--step--1);
+    border-style: solid;
+
+    background-color: rgb(255, 255, 255);
+
+    border-color: rgb(191, 148, 87);
+    margin-inline: 0.5ch;
 }
 
 .note img {
