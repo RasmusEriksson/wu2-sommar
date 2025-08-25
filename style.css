@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "chibi-metro-lines";
+    src: url("fonts/chibi-metro-lines.ttf");
+  }
+
+body {
+    margin: 0;
+    background-color: blanchedalmond;
+}
+
+.nav_bar img {
+    width: min(25% - 0rem, var(--container-max, 15ch));
+
+}
+.nav_bar {
+    background-color: rgb(190, 100, 10);
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+
+    display: flex;
+    
+    
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.page {
+    background-color: rgb(241, 198, 124);
+    width: min(100% - 0rem, var(--container-max, 120ch));
+    margin-inline: auto;
+}
+
+.upper_page h1 {
+    font-family:"chibi-metro-lines","sans-serif";
+    font-size: 5rem;
+    color: rgb(134, 56, 0);
+    -webkit-text-stroke-width: 0.05rem;
+    -webkit-text-stroke-color: wheat;
+}
+
+.upper_page img {
+    width: min(90% - 0rem, var(--container-max, 100ch));
+    height: 10rem;
+    object-fit: cover;
+    margin: 1rem;
+
+    border-style: solid;
+    border-radius: 1rem;
+    border-width: 0.25rem;
+    border-color: rgb(255, 249, 182);
+    
+}
+
+.upper_page {
+    width: 100%;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.lower_page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.note {
+    background-color: rgb(254, 249, 229);
+    padding: 0.5;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: min(90% - 0rem, var(--container-max, 40ch));
+    box-shadow: 0.5rem 0.5rem rgb(172, 159, 103);
+
+    color: rgb(69, 42, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.note img {
+    width: min(50% - 0rem, var(--container-max, 25ch));
+    margin: 0.5rem;
+}
+
+.note p {
+    margin: 1rem;
+}
